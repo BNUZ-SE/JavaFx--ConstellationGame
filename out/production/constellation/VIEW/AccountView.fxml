@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="account.AccountViewController">
+   <children>
+      <JFXPasswordField layoutX="225.0" layoutY="194.0" />
+      <JFXPasswordField layoutX="225.0" layoutY="255.0" />
+      <JFXTextField layoutX="225.0" layoutY="134.0" />
+      <JFXButton buttonType="RAISED" layoutX="257.0" layoutY="313.0" prefHeight="38.0" prefWidth="87.0" ripplerFill="#003a8c" style="-fx-background-color: #40a9ff;" text="注册" textFill="WHITE">
+         <font>
+            <Font name="Wingdings 3" size="19.0" />
+         </font>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="22.0" layoutY="21.0" prefHeight="27.0" prefWidth="56.0" ripplerFill="#003a8c" style="-fx-background-color: #40a9ff;" text="返回" textFill="WHITE">
+         <font>
+            <Font name="Wingdings 3" size="13.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>

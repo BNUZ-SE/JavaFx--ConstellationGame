@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="900.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="index.IndexViewController">
+   <children>
+      <ImageView fitHeight="137.0" fitWidth="196.0" layoutX="577.0" layoutY="271.0" onMouseClicked="#ON_QUERY_CLICK" pickOnBounds="true" AnchorPane.leftAnchor="577.0">
+         <image>
+            <Image url="@../VIEW/static/img/query.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="170.0" layoutY="271.0" onMouseClicked="#ON_MATCH_CLICK" pickOnBounds="true">
+         <image>
+            <Image url="@../VIEW/static/img/match.jpg" />
+         </image>
+      </ImageView>
+      <Text layoutX="208.0" layoutY="224.0" strokeType="OUTSIDE" strokeWidth="0.0" text="星座匹配">
+         <font>
+            <Font size="31.0" />
+         </font>
+         <fill>
+            <LinearGradient cycleMethod="REFLECT" endX="0.9711538461538461" endY="1.0" startX="0.2692307692307693" startY="0.4951923076923076">
+               <stops>
+                  <Stop color="#d3adf7" />
+                  <Stop color="#d3adf7" offset="0.04460966542750929" />
+                  <Stop color="#b37feb" offset="0.34594870137136124" />
+                  <Stop color="#722ed1" offset="0.7546468401486974" />
+                  <Stop color="#391085" offset="0.9925650557620811" />
+                  <Stop color="#391085" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Text>
+      <Text layoutX="404.0" layoutY="85.0" strokeType="OUTSIDE" strokeWidth="0.0" text="占星术">
+         <font>
+            <Font size="31.0" />
+         </font>
+         <fill>
+            <LinearGradient cycleMethod="REFLECT" endX="0.923076923076923" endY="1.0" startX="0.29807692307692313" startY="0.735576923076923">
+               <stops>
+                  <Stop color="#bae7ff" />
+                  <Stop color="#69c0ff" offset="0.3496661734903207" />
+                  <Stop color="#40a9ff" offset="0.5650557620817841" />
+                  <Stop color="#1890ff" offset="0.7695167286245351" />
+                  <Stop color="#002766" offset="0.9925650557620818" />
+                  <Stop color="#002766" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Text>
+      <Text layoutX="613.0" layoutY="224.0" strokeType="OUTSIDE" strokeWidth="0.0" text="星座查询">
+         <font>
+            <Font size="31.0" />
+         </font>
+         <fill>
+            <LinearGradient cycleMethod="REFLECT" endX="0.9711538461538461" endY="1.0" startX="0.2692307692307693" startY="0.4951923076923076">
+               <stops>
+                  <Stop color="#d3adf7" />
+                  <Stop color="#d3adf7" offset="0.04460966542750929" />
+                  <Stop color="#b37feb" offset="0.34594870137136124" />
+                  <Stop color="#722ed1" offset="0.7546468401486974" />
+                  <Stop color="#391085" offset="0.9925650557620811" />
+                  <Stop color="#391085" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Text>
+   </children>
+</AnchorPane>

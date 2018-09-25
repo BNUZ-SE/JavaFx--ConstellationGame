@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.RadialGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="600.0" prefWidth="900.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.match.MatchResultController">
+   <children>
+      <Text layoutX="376.0" layoutY="83.0" strokeType="OUTSIDE" strokeWidth="0.0" text="匹配报告">
+         <font>
+            <Font size="37.0" />
+         </font>
+         <fill>
+            <LinearGradient cycleMethod="REFLECT" endX="1.0" endY="1.0" startX="0.35576923076923084">
+               <stops>
+                  <Stop color="#bae7ff" />
+                  <Stop color="#ffadd3" offset="0.38289962825278806" />
+                  <Stop color="#bae8ff" offset="0.778766893362012" />
+                  <Stop color="#ffadd3" offset="0.9566958013701184" />
+                  <Stop color="#ffadd3" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Text>
+      <Text fx:id="manNameText" layoutX="160.0" layoutY="136.0" strokeType="OUTSIDE" strokeWidth="0.0" text="男生姓名">
+         <font>
+            <Font size="26.0" />
+         </font>
+         <fill>
+            <LinearGradient cycleMethod="REFLECT" endX="0.923076923076923" endY="1.0" startX="0.29807692307692313" startY="0.735576923076923">
+               <stops>
+                  <Stop color="#bae7ff" />
+                  <Stop color="#69c0ff" offset="0.3496661734903207" />
+                  <Stop color="#40a9ff" offset="0.5650557620817841" />
+                  <Stop color="#1890ff" offset="0.7695167286245351" />
+                  <Stop color="#002766" offset="0.9925650557620818" />
+                  <Stop color="#002766" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Text>
+      <Text fx:id="womanNameText" layoutX="633.0" layoutY="135.0" strokeType="OUTSIDE" strokeWidth="0.0" text="女生姓名">
+         <font>
+            <Font size="26.0" />
+         </font>
+         <fill>
+            <LinearGradient cycleMethod="REFLECT" endX="0.923076923076923" endY="1.0" startY="0.735576923076923">
+               <stops>
+                  <Stop color="#fff0f6" />
+                  <Stop color="#ffadd2" offset="0.23442453780258837" />
+                  <Stop color="#f759ab" offset="0.46468401486988814" />
+                  <Stop color="#9e1068" offset="0.6802973977695164" />
+                  <Stop color="#780650" offset="0.9219330855018587" />
+                  <Stop color="#780650" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Text>
+      <Text fx:id="resultPercentText" layoutX="408.0" layoutY="181.0" strokeType="OUTSIDE" strokeWidth="0.0" text="95%">
+         <font>
+            <Font size="40.0" />
+         </font>
+         <fill>
+            <LinearGradient cycleMethod="REFLECT" endX="0.7259615384615384" endY="0.5528846153846154" startX="0.3846153846153847" startY="0.27884615384615385">
+               <stops>
+                  <Stop color="#ff4d4f" />
+                  <Stop color="#ff4d4f" offset="0.20446096654275092" />
+                  <Stop color="#a8071a" offset="0.8736059479553901" />
+                  <Stop color="#a8071a" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Text>
+      <JFXButton buttonType="RAISED" layoutX="295.0" layoutY="502.0" onMouseClicked="#onShareClick" prefHeight="35.0" prefWidth="81.0" ripplerFill="#003a8ce5" style="-fx-background-color: #40a9ff;" text="分享" textFill="WHITE" />
+      <JFXButton buttonType="RAISED" layoutX="512.0" layoutY="502.0" onMouseClicked="#onAgainClick" prefHeight="35.0" prefWidth="81.0" ripplerFill="#003a8ce5" style="-fx-background-color: #40a9ff;" text="重新测试" textFill="WHITE" />
+      <JFXButton buttonType="RAISED" layoutX="44.0" layoutY="34.0" onMouseClicked="#onGoToIndexViewClick" prefHeight="35.0" prefWidth="81.0" ripplerFill="#003a8ce5" style="-fx-background-color: #40a9ff;" text="返回主页" textFill="WHITE" underline="true" />
+      <Text fx:id="manConstellationText" layoutX="276.0" layoutY="173.0" strokeType="OUTSIDE" strokeWidth="0.0" text="男生姓名" wrappingWidth="80.00000864267349">
+         <font>
+            <Font size="20.0" />
+         </font>
+         <fill>
+            <RadialGradient centerX="0.5" centerY="0.5" cycleMethod="REFLECT" radius="0.5">
+               <stops>
+                  <Stop color="#bae7ff" />
+                  <Stop color="#69c0ff" offset="0.5020825303676442" />
+                  <Stop color="#40a9ff" offset="0.8847583643122672" />
+                  <Stop color="#40a9ff" offset="1.0" />
+               </stops>
+            </RadialGradient>
+         </fill>
+      </Text>
+      <Text fx:id="womanConstellationText" layoutX="535.0" layoutY="174.0" strokeType="OUTSIDE" strokeWidth="0.0" text="女生姓名">
+         <font>
+            <Font size="20.0" />
+         </font>
+         <fill>
+            <RadialGradient centerX="0.5" centerY="0.5" cycleMethod="REFLECT" radius="0.5">
+               <stops>
+                  <Stop color="#fff0f6" />
+                  <Stop color="#ffadd2" offset="0.36825353408511624" />
+                  <Stop color="#f759ab" offset="0.7918215613382896" />
+                  <Stop color="#f759ab" offset="1.0" />
+               </stops>
+            </RadialGradient>
+         </fill>
+      </Text>
+      <Text fx:id="resultText" layoutX="196.0" layoutY="266.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" wrappingWidth="508.21875">
+         <fill>
+            <LinearGradient cycleMethod="REFLECT" endX="0.923076923076923" endY="1.0" startX="0.29807692307692313" startY="0.735576923076923">
+               <stops>
+                  <Stop color="#bae7ff" />
+                  <Stop color="#bae7ff" offset="0.055762081784386616" />
+                  <Stop color="#69c0ff" offset="0.23070706568362925" />
+                  <Stop color="#4265ff" offset="0.4089219330855011" />
+                  <Stop color="#ff42d2" offset="0.5996941477788411" />
+                  <Stop color="#ff42d0b5" offset="0.9904514428516368" />
+                  <Stop color="#ff42d0b5" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </fill></Text>
+   </children>
+</AnchorPane>
