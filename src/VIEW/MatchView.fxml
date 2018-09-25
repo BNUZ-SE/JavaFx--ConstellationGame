@@ -18,17 +18,22 @@
 
 <AnchorPane prefHeight="600.0" prefWidth="900.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.match.MatchViewController">
    <children>
+      <ImageView fitHeight="600.0" fitWidth="909.0" layoutX="-7.0" opacity="0.75">
+         <image>
+            <Image url="@static/img/Snow.jpg" />
+         </image>
+      </ImageView>
       <Text layoutX="376.0" layoutY="135.0" strokeType="OUTSIDE" strokeWidth="0.0" text="星座匹配">
          <font>
             <Font size="37.0" />
          </font>
          <fill>
-            <LinearGradient cycleMethod="REFLECT" endX="0.923076923076923" endY="1.0" startX="0.29807692307692313" startY="0.735576923076923">
+            <LinearGradient cycleMethod="REFLECT" endX="1.0" endY="1.0" startX="0.29807692307692313" startY="0.735576923076923">
                <stops>
-                  <Stop color="#bae7ff" />
-                  <Stop color="#69c0ff" offset="0.3496661734903207" />
-                  <Stop color="#40a9ff" offset="0.5650557620817841" />
-                  <Stop color="#1890ff" offset="0.7695167286245351" />
+                  <Stop color="#69c0ff" />
+                  <Stop color="#69c0ff" offset="0.037398515497755656" />
+                  <Stop color="#40a9ff" offset="0.37174721189591037" />
+                  <Stop color="#1890ff" offset="0.669144981412639" />
                   <Stop color="#002766" offset="0.9925650557620818" />
                   <Stop color="#002766" offset="1.0" />
                </stops>
